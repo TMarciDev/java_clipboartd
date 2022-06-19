@@ -3,7 +3,7 @@ import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 
-public class MyThread extends Thread {
+public class CurrentClipboardReaderThread extends Thread {
     public static String getClipBoard(){
         try {
             return (String) Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor);

@@ -14,7 +14,7 @@ public class Main {
             public void run()
             {
                 if(counter[0] < MAX) {
-                    MyThread myThread = new MyThread();
+                    CurrentClipboardReaderThread myThread = new CurrentClipboardReaderThread();
                     myThread.start();
                     counter[0]++;
                 } else {
